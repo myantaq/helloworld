@@ -1,16 +1,16 @@
 CPP=g++
-CFLAGS=-Wall -O2
+CPPFLAGS=-Wall -O2 -std=c++11
 
 
 .SUFFIXES:
 .SUFFIXES: .c .cpp .o .exe
 
 
-ALL: helloworld.exe gcd.o
+ALL: helloworld.exe gcd.o nCr.o
 
 
 .cpp.o:
-	${CPP} -c ${CFLAGS} $<
+	${CPP} -c ${CPPFLAGS} $<
 
 .o.exe:
 	${CPP} -o $@ $<
