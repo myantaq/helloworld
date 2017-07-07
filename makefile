@@ -6,7 +6,7 @@ CFLAGS=-Wall -O2
 .SUFFIXES: .c .cpp .o .exe
 
 
-ALL: helloworld.exe
+ALL: helloworld.exe gcd.o
 
 
 .cpp.o:
